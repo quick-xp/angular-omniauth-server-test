@@ -10,9 +10,11 @@ gem 'puma', '~> 3.0'
 
 gem 'devise'
 gem 'omniauth'
-gem 'devise_token_auth'
+#gem 'devise_token_auth'
+gem 'devise_token_auth', :git => 'git://github.com/lynndylanhurley/devise_token_auth.git'
 gem 'omniauth-github'
 gem 'dotenv-rails'
+gem 'rack-cors', :require => 'rack/cors'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

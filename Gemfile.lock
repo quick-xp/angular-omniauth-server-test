@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/lynndylanhurley/devise_token_auth.git
+  revision: 6ec3e2e1d8acd8fe818f4b6be98ca1ba3f03d7bd
+  specs:
+    devise_token_auth (0.1.38)
+      devise (> 3.5.2, <= 4.2)
+      rails (< 6)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -49,9 +57,6 @@ GEM
       railties (>= 4.1.0, < 5.1)
       responders
       warden (~> 1.2.3)
-    devise_token_auth (0.1.37)
-      devise (> 3.5.2, < 4.1)
-      rails (< 6)
     dotenv (2.1.1)
     dotenv-rails (2.1.1)
       dotenv (= 2.1.1)
@@ -105,6 +110,7 @@ GEM
     pkg-config (1.1.7)
     puma (3.4.0)
     rack (2.0.1)
+    rack-cors (0.4.0)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (5.0.0.1)
@@ -163,13 +169,14 @@ PLATFORMS
 DEPENDENCIES
   byebug
   devise
-  devise_token_auth
+  devise_token_auth!
   dotenv-rails
   listen (~> 3.0.5)
   mysql2 (= 0.3.19)
   omniauth
   omniauth-github
   puma (~> 3.0)
+  rack-cors
   rails (~> 5.0.0, >= 5.0.0.1)
   spring
   spring-watcher-listen (~> 2.0.0)
