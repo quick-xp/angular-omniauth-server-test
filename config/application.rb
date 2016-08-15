@@ -34,7 +34,10 @@ module AngularOmniauthServerTest
           :methods => [:get, :post, :options, :patch, :delete, :put]
       end
     end
-    config.session_store
-    config.api_only = false
+    config.middleware.use Rack::MethodOverride
+    config.middleware.use ActionDispatch::Cookies
+    config.middleware.use ActionDispatch::Session::CookieStore
+    config.middleware.use ActionDispatch::Flash
+    config.api_only = true
   end
 end
