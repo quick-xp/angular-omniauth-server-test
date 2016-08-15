@@ -15,6 +15,7 @@ gem 'devise_token_auth', :git => 'git://github.com/lynndylanhurley/devise_token_
 gem 'omniauth-github'
 gem 'dotenv-rails'
 gem 'rack-cors', :require => 'rack/cors'
+gem 'omniauth-eveonline'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
